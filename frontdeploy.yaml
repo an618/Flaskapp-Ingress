@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fontend-deployment
+  labels:
+    app: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:  # Corrected to singular 'spec'
+      containers:  # Corrected to plural 'containers'
+        - name: forntend-container
+          image: sanu1915/flaskapp:frontend
+          ports:
+            - containerPort: 80
