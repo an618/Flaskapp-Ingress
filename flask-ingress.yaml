@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: oleole.co.in
+  - host: weather-plant.com
     http:
       paths:
       - path: /
