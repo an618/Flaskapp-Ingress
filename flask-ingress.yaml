@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: weather-plant.com
+  - host: ole.weather-plant.com
     http:
       paths:
       - path: /
